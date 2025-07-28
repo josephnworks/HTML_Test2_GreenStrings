@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkanyu | Musicians | Green Strings - Music Label</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .musician_des1{
+            padding: 40px 26px;
+            text-align: center;
+        }
+        .musician_des2 {
+            padding: 40px 26px;
+            padding-right: 124px;
+            font-size: 17px;
+        }
+        .musician_des2 h1 {
+            font-family: C_Drawliner;
+            color: darkgreen;
+            font-weight: lighter;
+            font-size: 48px;
+        }
+
+        .slot_discog {
+            padding: 12px 24px;
+            font-family: C_Drawliner;
+            font-weight: lighter;
+            font-size: 20px;
+            color:darkgreen;
+        }
+
+        /*Discography slot*/
+        .musicians_discog {
+            padding: 20px 24px;
+            font-size: 20px;
+            text-align: center;
+            /*
+            font-family: C_Drawliner;
+            color: green;
+            */
+            font-weight: lighter;
+        }
+        .musicians_discog img:hover {
+            transition-duration: 0.25s;
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+        }
+
+        /*Click to show members timeline*/
+        .memberclick {
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .memberclick:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /*See more slot*/
+        .seemoremusicians {
+            padding: 20px 24px;
+            font-size: 20px;
+            text-align: center;
+
+            font-family: C_Drawliner;
+            color: green;
+            font-weight: lighter;
+        }
+        .seemoremusicians img:hover {
+            transition-duration: 0.25s;
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+        }
+    </style>
+    <script>
+        function DropMembers() {
+            var x = document.getElementById("memberDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="topnav">
+            <div class="topnav-logo" onclick="window.location.href='../Index.html'">
+                <img src="../Image Assets/greenstrings_logowhite.png" alt="gslogo" width="20%" 
+                style="float:left; padding: 10px; cursor: pointer;">
+            </div>
+            <!--List in reverse order-->
+            <a href="../Search.html">Search</a>
+            <a href="../Careers.html">Careers</a>
+            <a href="../AboutUs.html">About Us</a>
+            <a href="../FAQs.html">FAQs</a>
+            <a href="../NewsUpdates.html">News</a>
+            <a href="../Musicians.html"  class="active">Musicians</a>
+            <a href="../Index.html">Home</a>
+    </div>
+
+    <!--Artist Profile and Summary-->
+    <div>
+        <div class="row">
+            <div class="columnU U3">
+                <div class="musician_des1">
+                    <img src="../Image Assets/Musician Profile/profile_arkanyu.jpg" alt="profile1" width="75%"
+                    style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                    <p style="font-size: 12px;"><i>From left to right: Bassist Chad Elfred, keyboardist Archer Paxton, drummer Julian Ardent, vocalist/guitarist Kai Morran and 
+                        percussionist Cairo Bhakuizen. Pictured in 2025.
+                    </i></p>
+                </div>
+                
+            </div>
+            <div class="columnU U4">
+                <div class="musician_des2">
+                    <h1>Arkanyu</h1>
+                    
+                    <h4>Website: <a href="https://www.youtube.com/">www.arkanyuband.net</a></h4>
+                    <p>
+                        <b>Arkanyu</b> is a high-energy pop rock band hailing from Takeketonga, Selwyn, Blossomland, blending anthemic hooks with cinematic soundscapes. 
+                        Formed in 2020 by childhood friends Kai Morran (vocals/guitar) and Julian Ardent (drums), with addition of Chad Elfred (bass), Archer Paxton (keys) and Cairo Bahkuizen (percussion/vocals), 
+                        Arkanyu quickly carved out a loyal following with their emotionally charged lyrics and explosive live performances. Their sound fuses 
+                        the shimmer of 2000s-era pop punk with the atmospheric depth of modern alt-rock — think Paramore meets M83 on a stormy night. 
+                        With their debut EP Ghostlight Drive earning underground acclaim, Arkanyu is now poised to break out nationally, channeling Selwyn's 
+                        haunting beauty into songs that feel both intimate and arena-ready.
+                    </p>
+                    <h3>Members Timeline:</h3>
+                    <a onclick="DropMembers()" class="memberclick">Click Here</a>
+                    <div class="row" id="memberDIV" style="display: none;">
+                        <div class="columnE">
+                            <h4>Current Members:</h4>
+                            <ul>
+                                <li>Kai Morran - lead vocals, guitars (2020 - present)</li>
+                                <li>Julian Ardent - drums (2020 - present)</li>
+                                <li>Chad Elfred - bass, backing vocals (2020 - present)</li>
+                                <li>Archer Paxton - keyboards, synthesizers, backing vocals (2020 - present)</li>
+                                <li>Cairo Bhakuizen - percussion, additional drums, backing vocals (2024 - present)</li>
+                            </ul>
+                        </div>
+                        <div class="columnE">
+                            <h4>Former Members:</h4>
+                            <ul>
+                                <li>Timo Hawk - guitars (2020 - 2023)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!--Discography-->
+    <div style="padding: 40px 26px;">
+        <div>
+            <div class="slot_discog">
+                <h1>Discography</h1>
+            </div>
+            <div class="row">
+                <div class="columnE4">
+                    <div class="musicians_discog">
+                        <img src="../Album Cover Arts/Ghostlight Drive EP.png" alt="ghostlightep" width="75%">
+                        <br>
+                        <h2>Ghostlight Drive EP</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="musicians_discog">
+                        <img src="../Album Cover Arts/Ghostlight Drive EP.png" alt="ghostlight" width="75%">
+                        <br>
+                        <h2>Ghostlight Drive</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="musicians_discog">
+                        <img src="../Album Cover Arts/Ghostlight Drive EP.png" alt="graveflower" width="75%">
+                        <br>
+                        <h2>Graveflower</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="musicians_discog">
+                        <img src="../Album Cover Arts/Ghostlight Drive EP.png" alt="coldmercuryskies" width="75%">
+                        <br>
+                        <h2>Cold Mercury Skies</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="musicians_discog">
+                        <img src="../Album Cover Arts/Phantom Bloom.png" alt="phantombloom" width="75%">
+                        <br>
+                        <h2>Phantom Bloom</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="musicians_discog">
+                        <img src="../Album Cover Arts/Lantern In The Fogs.png" alt="lanterninthefog" width="75%">
+                        <br>
+                        <h2>Lantern In The Fog</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--See More Artists-->
+    <div style="padding: 40px 26px; background-color:palegreen">
+        <div>
+            <div class="slot_discog">
+                <h1>See More Musicians</h1>
+            </div>
+            <div class="row">
+                <div class="columnE4">
+                    <div class="seemoremusicians" onclick="window.location.href='../Musicians Subpages/Musicians_Loveness.html'">
+                        <img src="../Image Assets/Musician Profile/profile_loveness.jpg" alt="profile" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Loveness</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="seemoremusicians" onclick="window.location.href='../Musicians Subpages/Musicians_Oversharp.html'">
+                        <img src="../Image Assets/Musician Profile/profile_oversharp.jpg" alt="profile" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Oversharp</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="seemoremusicians">
+                        <img src="../Image Assets/Musician Profile/profile_theelseB.jpg" alt="profile" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>The Else</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="seemoremusicians">
+                        <img src="../Image Assets/Musician Profile/profile_lazfrank.jpg" alt="profile" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Laz Frank</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="row">
+            <div class="columnE">
+                <p>©2025 Green Strings Music Label</p>
+                <p><a href="../PrivacyPolicy.html">Privacy Policy</a> | 
+                    <a href="../FAQs.html">FAQs</a> |
+                    <a href="../Forms.html">Forms</a> |
+                    <a href="../Careers.html">Careers</a>
+                </p>
+            </div>
+            <div class="columnE">
+                <p>Follow Us on these Platforms:</p>
+                <p><a href="https://www.facebook.com/">Facebook</a> | 
+                    <a href="https://www.instagram.com/">Instagram</a> | 
+                    <a href="https://x.com/?lang=en">X</a> | 
+                    <a href="https://www.tiktok.com/en/">TikTok</a> |
+                    <a href="https://www.youtube.com/">YouTube</a> |
+                    <a href="https://open.spotify.com/">Spotify</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

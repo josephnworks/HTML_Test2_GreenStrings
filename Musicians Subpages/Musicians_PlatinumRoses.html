@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platinum Roses | Musicians | Green Strings - Music Label</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .musician_des1{
+            padding: 40px 26px;
+            text-align: center;
+        }
+        .musician_des2 {
+            padding: 40px 26px;
+            padding-right: 124px;
+            font-size: 17px;
+        }
+        .musician_des2 h1 {
+            font-family: C_Drawliner;
+            color: darkgreen;
+            font-weight: lighter;
+            font-size: 48px;
+        }
+
+        .slot_discog {
+            padding: 12px 24px;
+            font-family: C_Drawliner;
+            font-weight: lighter;
+            font-size: 20px;
+            color:darkgreen;
+        }
+
+        /*Discography slot*/
+        .musicians_discog {
+            padding: 20px 24px;
+            font-size: 20px;
+            text-align: center;
+            /*
+            font-family: C_Drawliner;
+            color: green;
+            */
+            font-weight: lighter;
+        }
+        .musicians_discog img:hover {
+            transition-duration: 0.25s;
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+        }
+
+        /*Click to show members timeline*/
+        .memberclick {
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .memberclick:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /*See more slot*/
+        .seemoremusicians {
+            padding: 20px 24px;
+            font-size: 20px;
+            text-align: center;
+
+            font-family: C_Drawliner;
+            color: green;
+            font-weight: lighter;
+        }
+        .seemoremusicians img:hover {
+            transition-duration: 0.25s;
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+        }
+    </style>
+    <script>
+        function DropMembers() {
+            var x = document.getElementById("memberDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="topnav">
+            <div class="topnav-logo" onclick="window.location.href='../Index.html'">
+                <img src="../Image Assets/greenstrings_logowhite.png" alt="gslogo" width="20%" 
+                style="float:left; padding: 10px; cursor: pointer;">
+            </div>
+            <!--List in reverse order-->
+            <a href="../Search.html">Search</a>
+            <a href="../Careers.html">Careers</a>
+            <a href="../AboutUs.html">About Us</a>
+            <a href="../FAQs.html">FAQs</a>
+            <a href="../NewsUpdates.html">News</a>
+            <a href="../Musicians.html"  class="active">Musicians</a>
+            <a href="../Index.html">Home</a>
+    </div>
+
+    <!--Artist Profile and Summary-->
+    <div>
+        <div class="row">
+            <div class="columnU U3">
+                <div class="musician_des1">
+                    <img src="../Image Assets/Musician Profile/profile_platimunroses.jpg" alt="profile1" width="75%"
+                    style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                    <p style="font-size: 12px;"><i>From left to right: drummer Florian Hildred, lead vocalist/keyboardist Catherine Ibbot, guitarist/keyboardist Lachlann Ibbot, and bassist Eli Fabien. Pictured in 2025.
+                    </i></p>
+                </div>
+                
+            </div>
+            <div class="columnU U4">
+                <div class="musician_des2">
+                    <h1>Platinum Roses</h1>
+                    
+                    <h4>Website: <a href="https://www.youtube.com/">www.platinumroses.com</a></h4>
+                    
+                    <p>
+                        <b>Platinum Roses</b> is a dazzling force in the pop music world, known for their infectious hooks, sleek production, and shimmering aesthetic. With a sound that blends high-energy dance beats, 
+                        cinematic synths, and emotionally charged lyrics, the band has become a staple of both festival main stages and late-night playlists. Their style is bold, their presence magnetic, 
+                        and their music a perfect storm of glamour and vulnerability — capturing the highs and heartbreaks of youth in full color.
+                    </p>
+                    <h3>Members Timeline:</h3>
+                    <a onclick="DropMembers()" class="memberclick">Click Here</a>
+                    <div class="row" id="memberDIV" style="display: none;">
+                        <div class="columnE">
+                            <h4>Current Members:</h4>
+                            <ul>
+                                <li>Catherine Ibbot - lead vocals, keyboards (2016 - present)</li>
+                                <li>Lachlann Ibbot - guitar, keyboards, backing vocals (2016 - present)</li>
+                                <li>Eli Fabien - bass (2017, 2023 - present)</li>
+                                <li>Florian Hildred - drums (2019 - present)</li>
+                            </ul>
+                        </div>
+                        <div class="columnE">
+                            <h4>Former Members:</h4>
+                            <ul>
+                                <li>Patrick Taggart - bass (2016 - 2017)</li>
+                                <li>Malcolm Daniell - drums (2016 - 2019)</li>
+                                <li>Eugene Ayers - bass, guitar (2017 - 2023)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!--Discography-->
+    <div style="padding: 40px 26px;">
+        <div>
+            <div class="slot_discog">
+                <h1>Discography</h1>
+            </div>
+            <div class="row">
+                <div class="columnE4">
+                    <div class="musicians_discog">
+                        <img src="../Image Assets/500x500 placeholder.jpg" alt="placeholder" width="75%">
+                        <br>
+                        <h2>ID</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="musicians_discog">
+                        <img src="../Image Assets/500x500 placeholder.jpg" alt="placeholder" width="75%">
+                        <br>
+                        <h2>ID</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="musicians_discog">
+                        <img src="../Image Assets/500x500 placeholder.jpg" alt="placeholder" width="75%">
+                        <br>
+                        <h2>ID</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="musicians_discog">
+                        <img src="../Image Assets/500x500 placeholder.jpg" alt="placeholder" width="75%">
+                        <br>
+                        <h2>ID</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--See More Artists-->
+    <div style="padding: 40px 26px; background-color:palegreen">
+        <div>
+            <div class="slot_discog">
+                <h1>See More Musicians</h1>
+            </div>
+            <div class="row">
+                <div class="columnE4">
+                    <div class="seemoremusicians" onclick="window.location.href='../Musicians Subpages/Musicians_Oversharp.html'">
+                        <img src="../Image Assets/Musician Profile/profile_platimunroses.jpg" alt="profile" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Oversharp</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="seemoremusicians" onclick="window.location.href='../Musicians Subpages/Musicians_Arkanyu.html'">
+                        <img src="../Image Assets/Musician Profile/profile_arkanyu.jpg" alt="profile" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Arkanyu</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="seemoremusicians" onclick="window.location.href='../Musicians Subpages/Musicians_GreenWaves.html'">
+                        <img src="../Image Assets/Musician Profile/proifle_greenwaves.jpg" alt="profile" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Green Waves</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="seemoremusicians" onclick="window.location.href='../Musicians Subpages/Musicians_Firstblood.html'">
+                        <img src="../Image Assets/Musician Profile/profile_firstblood.jpg" alt="profile" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Firstblood</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="row">
+            <div class="columnE">
+                <p>©2025 Green Strings Music Label</p>
+                <p><a href="../PrivacyPolicy.html">Privacy Policy</a> | 
+                    <a href="../FAQs.html">FAQs</a> |
+                    <a href="../Forms.html">Forms</a> |
+                    <a href="../Careers.html">Careers</a>
+                </p>
+            </div>
+            <div class="columnE">
+                <p>Follow Us on these Platforms:</p>
+                <p><a href="https://www.facebook.com/">Facebook</a> | 
+                    <a href="https://www.instagram.com/">Instagram</a> | 
+                    <a href="https://x.com/?lang=en">X</a> | 
+                    <a href="https://www.tiktok.com/en/">TikTok</a> |
+                    <a href="https://www.youtube.com/">YouTube</a> |
+                    <a href="https://open.spotify.com/">Spotify</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
