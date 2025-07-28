@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Green Strings - Music Label</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .homeheadbg {
+            background-image: url('./Image Assets/homehead_bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+
+            padding: 50px;
+            text-align: center;
+        }
+
+        .homeheadtxt {
+            background-color: rgba(0,184,0,0.75);
+            padding: 100px 120px;
+            font-family: C_Drawliner;
+            font-size: 50px;
+            color: white;
+        }
+        .homeheadtxt h1 {
+            font-weight: lighter;
+        }
+
+        /*Who are we slot*/
+        .homeslot_whoarewe {
+            padding: 20px 24px;
+            font-size: 17px;
+
+        }
+        .homeslot_whoareweIMG {
+            padding: 20px 40px;
+            padding-top: 45px;
+            text-align: center;
+        }
+
+        /*Musicians slot*/
+        .homeslot_topmusicians {
+            padding: 20px 24px;
+            font-size: 20px;
+            text-align: center;
+
+            font-family: C_Drawliner;
+            color: green;
+            font-weight: lighter;
+        }
+        .homeslot_topmusicians img:hover {
+            /*
+            background-color: lightgreen;
+            transition-duration: 0.25s;
+            border-radius: 25px;
+            cursor: pointer;
+            */
+
+            transition-duration: 0.25s;
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+        }
+        .seeall {
+            float: right;
+            text-decoration: none;
+            padding-right: 85px;
+            padding-top: 24px;
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .seeall:hover {
+            color:darkgreen;
+            text-decoration: underline;
+        }
+
+        /*Album covers*/
+        .homeslot_albumstxt {
+            padding: 40px;
+            text-decoration: none;
+            font-size: 24px;
+            text-align: center;
+        }
+        .AS_1 {
+            background-image: url("https://images.unsplash.com/photo-1560803262-95a9de00a057?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-repeat: no-repeat;
+            padding: 100px 40px 20px 40px;
+        }
+        .AS_2 {
+            background-image: url("https://images.unsplash.com/photo-1701051229414-aac7b7167cf2?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-repeat: no-repeat;
+            padding: 100px 40px 20px 40px;
+        }
+        .AS_3 {
+            background-image: url("https://images.unsplash.com/photo-1672440635833-0d4219ec7286?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-repeat: no-repeat;
+            padding: 100px 40px 20px 40px;
+        }
+        .AS_4 {
+            background-image: url("https://images.unsplash.com/photo-1632445313658-4b6f0d36afba?q=80&w=2085&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-repeat: no-repeat;
+            padding: 100px 40px 20px 40px;
+        }
+
+        /*Forms*/
+        input[type=text], input[type=submit], input[type=email] {
+        width: 75%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        }
+
+        /* Add margins to the checkbox */
+        input[type=checkbox] {
+        margin-top: 16px;
+        }
+
+        /* Style the submit button */
+        input[type=submit] {
+        background-color: green;
+        color: white;
+        border: none;
+        }
+
+        input[type=submit]:hover {
+        opacity: 0.8;
+        }
+
+        .homeslot_header{
+            background-color: darkgreen;
+            border-radius: 25px;
+            padding: 14px;
+            text-align: center;
+
+            font-family: C_Drawliner;
+            color:white;
+            font-weight:lighter;
+        }
+    </style>
+    <script src="./Javascript Files/Index_TopMusicians.js"></script>
+    <script src="./Javascript Files/Index_RecentAlbums.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div class="topnav">
+            <div class="topnav-logo" onclick="window.location.href='Index.html'">
+                <img src="./Image Assets/greenstrings_logowhite.png" alt="gslogo" width="20%" 
+                style="float:left; padding: 10px; cursor: pointer;">
+            </div>
+            <!--List in reverse order-->
+            <a href="Search.html">Search</a>
+            <a href="Careers.html">Careers</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="FAQs.html">FAQs</a>
+            <a href="NewsUpdates.html">News</a>
+            <a href="Musicians.html">Musicians</a>
+            <a href="Index.html" class="active">Home</a>
+    </div>
+
+    <div class="homeheadbg">
+        <div class="homeheadtxt">
+            <h1>Green Strings</h1>
+            <p style="font-size: 40px;">Pickin' and Rockin' since 2024</p>
+        </div>
+    </div>
+
+    <!--Who are we-->
+    <div class="row">
+        <div class="columnE">
+            <div class="homeslot_whoareweIMG">
+                <div class="row">
+                    <div class="columnE">
+                        <img src="./Image Assets/Musician Profile/profile_marieemilie.jpg" alt="profile1" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                    </div>
+                    <div class="columnE">
+                        <img src="./Image Assets/Musician Profile/profile_ferdieknight.jpg" alt="profile2" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                    </div>
+                </div>
+                <p><i>From left to right: Marie Emilie and Ferdie Knight: first musicians signed to our label.</i></p>
+            </div>
+        </div>
+        <div class="columnE">
+            <div class="homeslot_whoarewe">
+                <h1 class="homeslot_header">Who Are We?</h1>
+                <p><b>Green Strings</b> is an indepedent record label based in Selwyn. Founded in 2024, we've deliver the purest
+                rock music that anyone can enjoy at any time, ranging from alternative to pop, emo to grunge and even metal to hardcore.
+                <br> <br>
+                We also have well-known local musicians who have signed and appeared in our label, such as Marie Emilie Hoch, 
+                Love Ness Sitz, Ferdie Knight and Firstblood.
+                <br> <br>
+                Whenever you listen to our music, play along when you're <b>Pickin' and Rockin'</b>.</p>
+                <br>
+                <div style="text-align: center;">
+                    <a href="AboutUs.html">
+                        <button type="button" class="button1">Click Here for More Info</button>
+                    </a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!--Musician Section-->
+    <div class="row">
+        <div class="columnU U1">
+            <div style="padding-left: 24px;">
+                <h1 class="homeslot_header">Our Musicians</h1>
+            </div>
+        </div>
+        <div class="columnU U2">
+            <a href="Musicians.html" class="seeall">See All</a>
+        </div>
+    </div>
+
+    <div>
+        <!--Slide 1-->
+        <div class="MusicianSlidesHome" style="padding: 24px 20px;">
+            <div class="row">
+                <div class="columnE4">
+                    <div class="homeslot_topmusicians" onclick="window.location.href='./Musicians Subpages/Musicians_MarieEmilie.html'">
+                        <img src="./Image Assets/Musician Profile/profile_marieemilie.jpg" alt="profile1" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Marie Emilie</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="homeslot_topmusicians" onclick="window.location.href='./Musicians Subpages/Musicians_FerdieKnight.html'">
+                        <img src="./Image Assets/Musician Profile/profile_ferdieknight.jpg" alt="profile2" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Ferdie Knight</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="homeslot_topmusicians" onclick="window.location.href='./Musicians Subpages/Musicians_GordonBrothers.html'">
+                        <img src="./Image Assets/Musician Profile/profile_gordonbrothers.jpg" alt="profile3" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Gordon Brothers</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="homeslot_topmusicians" onclick="window.location.href='./Musicians Subpages/Musicians_Loveness.html'">
+                        <img src="./Image Assets/Musician Profile/profile_loveness.jpg" alt="profile4" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Loveness</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Slide 2-->
+        <div class="MusicianSlidesHome" style="padding: 24px 20px; display: none;">
+            <div class="row">
+                <div class="columnE4">
+                    <div class="homeslot_topmusicians" onclick="window.location.href='./Musicians Subpages/Musicians_Firstblood.html'">
+                        <img src="./Image Assets/Musician Profile/profile_firstblood.jpg" alt="profile5" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Firstblood</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="homeslot_topmusicians" onclick="window.location.href='./Musicians Subpages/Musicians_Oversharp.html'">
+                        <img src="./Image Assets/Musician Profile/profile_oversharp.jpg" alt="profile6" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Oversharp</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="homeslot_topmusicians" onclick="window.location.href='./Musicians Subpages/Musicians_CameronBarton.html'">
+                        <img src="./Image Assets/Musician Profile/profile_cameronbarton.jpg" alt="profile7" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Cameron Barton</h2>
+                    </div>
+                </div>
+                <div class="columnE4">
+                    <div class="homeslot_topmusicians" onclick="window.location.href='./Musicians Subpages/Musicians_PlatinumRoses.html'">
+                        <img src="./Image Assets/Musician Profile/profile_platimunroses.jpg" alt="profile8" width="75%"
+                        style="border-style: solid; border-color: darkgreen; border-radius: 25px;">
+                        <br>
+                        <h2>Platinum Roses</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Buttons-->
+        <div style="padding: 14px; text-align: center;">
+            <button class="button2a-SlideHome" onclick="plusMusicians(-1)">&#10094;</button>
+            <button class="button2a-SlideHome" onclick="plusMusicians(+1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!--Recent Releases-->
+    <div>
+        <!--Slide 1-->
+        <div class="ASHome AS_1">
+            <div>
+                <div class="row">
+                    <div class="columnE">
+                        <div style="padding: 20px 24px; text-align: center;">
+                            <img src="./Album Cover Arts/Marie Emilie - Visions LP.png" alt="lpvisions" width="60%">
+                        </div>
+                    </div>
+                    <div class="columnE">
+                        <div class="homeslot_albumstxt">
+                            <h1>Visions</h1>
+                            <p>New Album by our favourite singer-songwriter Marie Emilie is out now.</p>
+                            <a href="#">
+                                <button type="button" class="button3-outline">Listen Here</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Buttons-->
+            <div style="padding: 14px; text-align: center;">
+                <button class="button2b-SlideHome" onclick="plusAS(-1)">&#10094;</button>
+                <button class="button2b-SlideHome" onclick="plusAS(+1)">&#10095;</button>
+            </div>
+        </div>
+        <!--Slide 2-->
+        <div class="ASHome AS_2" style="display: none;">
+            <div>
+                <div class="row">
+                    <div class="columnE">
+                        <div style="padding: 20px 24px; text-align: center;">
+                            <img src="./Album Cover Arts/Oversharp - Blitz LP.png" alt="lpblitz" width="60%">
+                        </div>
+                    </div>
+                    <div class="columnE">
+                        <div class="homeslot_albumstxt">
+                            <h1>Blitz</h1>
+                            <p>Upcoming Debut Album by alternative rock band Oversharp is out on August 20.</p>
+                            <a href="#">
+                                <button type="button" class="button3-outline">Pre-save Here</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Buttons-->
+            <div style="padding: 14px; text-align: center;">
+                <button class="button2b-SlideHome" onclick="plusAS(-1)">&#10094;</button>
+                <button class="button2b-SlideHome" onclick="plusAS(+1)">&#10095;</button>
+            </div>
+        </div>
+        <!--Slide 3-->
+        <div class="ASHome AS_3" style="display: none;">
+            <div>
+                <div class="row">
+                    <div class="columnE">
+                        <div style="padding: 20px 24px; text-align: center;">
+                            <img src="./Album Cover Arts/Cameron Barton - Heaven LP.png" alt="lpwtheaven" width="60%">
+                        </div>
+                    </div>
+                    <div class="columnE">
+                        <div class="homeslot_albumstxt">
+                            <h1>Walking To Heaven</h1>
+                            <p>Upcoming Album by rock singer-songwriter Cameron Barton is out on September 4.</p>
+                            <a href="#">
+                                <button type="button" class="button3-outline">Pre-save Here</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Buttons-->
+            <div style="padding: 14px; text-align: center;">
+                <button class="button2b-SlideHome" onclick="plusAS(-1)">&#10094;</button>
+                <button class="button2b-SlideHome" onclick="plusAS(+1)">&#10095;</button>
+            </div>
+        </div>
+        <!--Slide 4-->
+        <div class="ASHome AS_4" style="display: none;">
+            <div>
+                <div class="row">
+                    <div class="columnE">
+                        <div style="padding: 20px 24px; text-align: center;">
+                            <img src="./Album Cover Arts/Ferdie Knight - Firm EP.png" alt="epfirm" width="60%">
+                        </div>
+                    </div>
+                    <div class="columnE">
+                        <div class="homeslot_albumstxt">
+                            <h1>Firm EP</h1>
+                            <p>Extended Play by our favourite pop rock singer-songwriter Ferdie Knight is out now</p>
+                            <a href="#">
+                                <button type="button" class="button3-outline">Listen Here</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Buttons-->
+            <div style="padding: 14px; text-align: center;">
+                <button class="button2b-SlideHome" onclick="plusAS(-1)">&#10094;</button>
+                <button class="button2b-SlideHome" onclick="plusAS(+1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Mailing List-->
+    <div>
+        <div style="padding: 24px 100px;">
+            <div class="homeslot_header">
+                <h1>Subscribe to our Newsletter</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columnE">
+                <div style="padding: 20px 60px; text-align: center;">
+                    <p>Subscribe to our free monthly newsletter for any updates for our label and any announcements from our loyal musicians.</p>
+                    <p>You can cancel your subscription at any time.</p>
+                </div>
+                
+            </div>
+            <div class="columnE">
+                <form  action="" method="post" style="padding: 20px 60px;">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <br>
+                    <input type="email" placeholder="Email Address" name="email" required>
+                    <br>
+                    <label>
+                        <input type="checkbox" unchecked required name="subscribe"> Read and agree on <a href="PrivacyPolicy.html">Privacy Policy and Terms & Conditions</a>.
+                    </label>
+                    <br>
+                    <br>
+                    <input type="submit" value="Subscribe" class="button1" style="background-color: green;">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="row">
+            <div class="columnE">
+                <p>©2025 Green Strings Music Label</p>
+                <p><a href="PrivacyPolicy.html">Privacy Policy</a> | 
+                    <a href="FAQs.html">FAQs</a> |
+                    <a href="Forms.html">Forms</a> |
+                    <a href="Careers.html">Careers</a>
+                </p>
+            </div>
+            <div class="columnE">
+                <p>Follow Us on these Platforms:</p>
+                <p><a href="https://www.facebook.com/">Facebook</a> | 
+                    <a href="https://www.instagram.com/">Instagram</a> | 
+                    <a href="https://x.com/?lang=en">X</a> | 
+                    <a href="https://www.tiktok.com/en/">TikTok</a> |
+                    <a href="https://www.youtube.com/">YouTube</a> |
+                    <a href="https://open.spotify.com/">Spotify</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

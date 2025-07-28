@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | Green Strings - Music Label</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .slot1 {
+            padding: 20px 24px;
+            font-size: 17px;
+        }
+
+        .slot2 {
+            padding: 12px 40px;
+            font-size: 20px;
+            color: green;
+            text-align: center;
+        }
+        .slot2 a {
+            color: green;
+            text-decoration: none;
+        }
+        .slot2 a:hover {
+            text-decoration: underline;
+            transition-duration: 0.25s;
+        }
+
+        .slot3-article {
+            padding: 20px 24px;
+            color: black;
+            font-size: 20px;
+        }
+
+        .img1 {
+            background-image: url("./Image Assets/formimg.jpg");
+            padding: 450px 200px;
+            background-repeat: no-repeat;
+            background-position: 75%;
+            filter: brightness(75%);
+            background-size: cover;
+        }
+    </style>
+    
+    <script>
+        function A1() {
+            var x = document.getElementById("Article1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function A2() {
+            var x = document.getElementById("Article2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function A3() {
+            var x = document.getElementById("Article3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function A4() {
+            var x = document.getElementById("Article4");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="topnav">
+            <div class="topnav-logo" onclick="window.location.href='Index.html'">
+                <img src="./Image Assets/greenstrings_logowhite.png" alt="gslogo" width="20%" 
+                style="float:left; padding: 10px; cursor: pointer;">
+            </div>
+            <!--List in reverse order-->
+            <a href="Search.html">Search</a>
+            <a href="Careers.html">Careers</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="FAQs.html">FAQs</a>
+            <a href="NewsUpdates.html" class="active">News</a>
+            <a href="Musicians.html">Musicians</a>
+            <a href="Index.html">Home</a>
+    </div>
+
+    <div class="pageheader">
+        <h1>News</h1>
+    </div>
+
+    <div class="slot1">
+        <div class="slot2">
+            <p>Check any news and updates here from us and our musicians here. Articles will change and replaced at any time.</p>
+            <p>Want to stay updated? <a href="Forms.html">Click Here</a>.</p>
+        </div>
+    </div>
+
+    <!--Articles-->
+    <div class="slot1">
+        <div style="background-color: lightgreen;">
+            <!--1-->
+            <div class="row">
+                <div class="columnE">
+                    <div class="slot3-article">
+                        <div style="text-align: center;">
+                            <img src="./Image Assets/500x500 placeholder.jpg" alt="placeholder" width="50%">
+                        </div>
+                        <h3>Article Topic</h3>
+                        <button onclick="A1()" class="button2b-SlideHome">See More</button>
+                    </div>
+                    <div class="slot3-article" id="Article1"style="display: none;">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere semper suscipit. Mauris vel egestas leo, et consectetur arcu. Nunc et lacinia turpis, eu sollicitudin tellus. 
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam volutpat imperdiet eros nec ullamcorper. Aenean dictum nulla non fermentum lacinia. In at hendrerit ligula.
+                            <br>
+                            Fusce viverra nulla ac nibh consectetur, sit amet mattis nunc scelerisque. Sed cursus nibh dictum lacus pretium congue. Ut sed nisi sed mauris tristique tempor eget sodales arcu. 
+                            Cras pellentesque placerat lacinia. Curabitur pretium consequat mattis. Nam pellentesque porta mollis. Curabitur lacinia commodo ornare. Integer in diam odio. Suspendisse tempus felis non diam luctus, sed luctus nibh gravida.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                
+                <div class="columnE">
+                    <div class="slot3-article">
+                        <div style="text-align: center;">
+                            <img src="./Image Assets/500x500 placeholder.jpg" alt="placeholder" width="50%">
+                        </div>
+                        <h3>Article Topic</h3>
+                        <button onclick="A2()" class="button2b-SlideHome">See More</button>
+                    </div>
+                    <div class="slot3-article" id="Article2"style="display: none;">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere semper suscipit. Mauris vel egestas leo, et consectetur arcu. Nunc et lacinia turpis, eu sollicitudin tellus. 
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam volutpat imperdiet eros nec ullamcorper. Aenean dictum nulla non fermentum lacinia. In at hendrerit ligula.
+                            <br>
+                            Fusce viverra nulla ac nibh consectetur, sit amet mattis nunc scelerisque. Sed cursus nibh dictum lacus pretium congue. Ut sed nisi sed mauris tristique tempor eget sodales arcu. 
+                            Cras pellentesque placerat lacinia. Curabitur pretium consequat mattis. Nam pellentesque porta mollis. Curabitur lacinia commodo ornare. Integer in diam odio. Suspendisse tempus felis non diam luctus, sed luctus nibh gravida.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <!--1-->
+            <div class="row">
+                <div class="columnE">
+                    <div class="slot3-article">
+                        <div style="text-align: center;">
+                            <img src="./Image Assets/500x500 placeholder.jpg" alt="placeholder" width="50%">
+                        </div>
+                        <h3>Article Topic</h3>
+                        <button onclick="A3()" class="button2b-SlideHome">See More</button>
+                    </div>
+                    <div class="slot3-article" id="Article3"style="display: none;">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere semper suscipit. Mauris vel egestas leo, et consectetur arcu. Nunc et lacinia turpis, eu sollicitudin tellus. 
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam volutpat imperdiet eros nec ullamcorper. Aenean dictum nulla non fermentum lacinia. In at hendrerit ligula.
+                            <br>
+                            Fusce viverra nulla ac nibh consectetur, sit amet mattis nunc scelerisque. Sed cursus nibh dictum lacus pretium congue. Ut sed nisi sed mauris tristique tempor eget sodales arcu. 
+                            Cras pellentesque placerat lacinia. Curabitur pretium consequat mattis. Nam pellentesque porta mollis. Curabitur lacinia commodo ornare. Integer in diam odio. Suspendisse tempus felis non diam luctus, sed luctus nibh gravida.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                
+                <div class="columnE">
+                    <div class="slot3-article">
+                        <div style="text-align: center;">
+                            <img src="./Image Assets/500x500 placeholder.jpg" alt="placeholder" width="50%">
+                        </div>
+                        <h3>Article Topic</h3>
+                        <button onclick="A4()" class="button2b-SlideHome">See More</button>
+                    </div>
+                    <div class="slot3-article" id="Article4"style="display: none;">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere semper suscipit. Mauris vel egestas leo, et consectetur arcu. Nunc et lacinia turpis, eu sollicitudin tellus. 
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam volutpat imperdiet eros nec ullamcorper. Aenean dictum nulla non fermentum lacinia. In at hendrerit ligula.
+                            <br>
+                            Fusce viverra nulla ac nibh consectetur, sit amet mattis nunc scelerisque. Sed cursus nibh dictum lacus pretium congue. Ut sed nisi sed mauris tristique tempor eget sodales arcu. 
+                            Cras pellentesque placerat lacinia. Curabitur pretium consequat mattis. Nam pellentesque porta mollis. Curabitur lacinia commodo ornare. Integer in diam odio. Suspendisse tempus felis non diam luctus, sed luctus nibh gravida.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br> <br>
+    <!--Image on bottom-->
+    <div class="img1">
+        <!--Leave Blank-->
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="row">
+            <div class="columnE">
+                <p>©2025 Green Strings Music Label</p>
+                <p><a href="PrivacyPolicy.html">Privacy Policy</a> | 
+                    <a href="FAQs.html">FAQs</a> |
+                    <a href="Forms.html">Forms</a> |
+                    <a href="Careers.html">Careers</a>
+                </p>
+            </div>
+            <div class="columnE">
+                <p>Follow Us on these Platforms:</p>
+                <p><a href="https://www.facebook.com/">Facebook</a> | 
+                    <a href="https://www.instagram.com/">Instagram</a> | 
+                    <a href="https://x.com/?lang=en">X</a> | 
+                    <a href="https://www.tiktok.com/en/">TikTok</a> |
+                    <a href="https://www.youtube.com/">YouTube</a> |
+                    <a href="https://open.spotify.com/">Spotify</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

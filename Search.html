@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | Green Strings - Music Label</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .slot1 {
+            padding: 20px 24px;
+            font-size: 17px;
+        }
+        
+        .img1 {
+            background-image: url("./Image Assets/formimg.jpg");
+            padding: 450px 200px;
+            background-repeat: no-repeat;
+            background-position: 75%;
+            filter: brightness(75%);
+            background-size: cover;
+        }
+
+            input[type=text] {
+            width: 25%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 17px;
+        }
+
+        .endnote {
+            padding: 40px 24px;
+            color: green;
+            font-family: C_Drawliner;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* Style the navigation menu */
+        #menuS {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Style the navigation links */
+        #menuS li a {
+            padding: 12px;
+            text-decoration: none;
+            color: black;
+            display: block
+        }
+
+        #menuS li a:hover {
+            text-decoration: underline;
+            background-color:azure;
+            transition-duration: 0.25s;
+        }
+    </style>
+    <script>
+        function searchS() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("menuS");
+            li = ul.getElementsByTagName("li");
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="topnav">
+        <div class="topnav-logo" onclick="window.location.href='Index.html'">
+            <img src="./Image Assets/greenstrings_logowhite.png" alt="gslogo" width="20%" 
+            style="float:left; padding: 10px; cursor: pointer;">
+        </div>
+        <!--List in reverse order-->
+        <a href="Search.html" class="active">Search</a>
+        <a href="Careers.html">Careers</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="FAQs.html">FAQs</a>
+        <a href="NewsUpdates.html">News</a>
+        <a href="Musicians.html">Musicians</a>
+        <a href="Index.html">Home</a>
+    </div>
+
+    <div class="pageheader">
+        <h1>Search</h1>
+        <h4>Find anything you want to see here.</h4>
+    </div>
+
+    <div class="slot1">
+        <div style="text-align: center;">
+            <input type="text" id="mySearch" onkeyup="searchS()" placeholder="Search">
+        </div>
+        <br> <br>
+        <div style="padding: 12px 250px;">
+            <ul id="menuS">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="./Musicians Subpages/Musicians_Arkanyu.html">Arkanyu</a></li>
+                <li><a href="./Musicians Subpages/Musicians_CameronBarton.html">Cameron Barton</a></li>
+                <li><a href="./Musicians Subpages/Musicians_JanineBlack.html">Janine Black</a></li>
+                <li><a href="./Musicians Subpages/Musicians_MysieBush.html">Mysie Bush</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="AboutUs.html#SDcontact">Contacts</a></li>
+                <li><a href="./Musicians Subpages/Musicians_ErnieDennis.html">Ernie Dennis</a></li>
+                <li><a href="./Musicians Subpages/Musicians_MarieEmilie.html">Marie Emilie</a></li>
+                <li><a href="./Musicians Subpages/Musicians_TheElse.html">The Else</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+                <li><a href="./Musicians Subpages/Musicians_Fairchild.html">Fairchild</a></li>
+                <li><a href="./Musicians Subpages/Musicians_Firstblood.html">Firstblood</a></li>
+                <li><a href="Forms.html">Forms</a></li>
+                <li><a href="./Musicians Subpages/Musicians_LazFrank.html">Laz Frank</a></li>
+                <li><a href="./Musicians Subpages/Musicians_GordonBrothers.html">Gordon Brothers</a></li>
+                <li><a href="./Musicians Subpages/Musicians_GreenWaves.html">Green Waves</a></li>
+                <li><a href="./Musicians Subpages/Musicians_FerdieKnight.html">Ferdie Knight</a></li>
+                <li><a href="./Musicians Subpages/Musicians_Loveness.html">Loveness</a></li>
+                <li><a href="Musicians.html">Musicians</a></li>
+                <li><a href="NewsUpdates.html">News</a></li>
+                <li><a href="./Musicians Subpages/Musicians_Oversharp.html">Oversharp</a></li>
+                <li><a href="./Musicians Subpages/Musicians_PlatinumRoses.html">Platinum Roses</a></li>
+                <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="Forms.html#Option3">Submit Music</a></li>
+                <li><a href="PrivacyPolicy.html#SDtc">Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--End Point Note-->
+    <div class="slot1">
+        <div class="endnote">
+            <p>Looks like you've reached the end.</p>
+        </div>
+    </div>
+
+    
+
+
+    <!--Image on bottom-->
+    <div class="img1">
+        <!--Leave Blank-->
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="row">
+            <div class="columnE">
+                <p>©2025 Green Strings Music Label</p>
+                <p><a href="PrivacyPolicy.html">Privacy Policy</a> | 
+                    <a href="FAQs.html">FAQs</a> |
+                    <a href="Forms.html">Forms</a> |
+                    <a href="Careers.html">Careers</a>
+                </p>
+            </div>
+            <div class="columnE">
+                <p>Follow Us on these Platforms:</p>
+                <p><a href="https://www.facebook.com/">Facebook</a> | 
+                    <a href="https://www.instagram.com/">Instagram</a> | 
+                    <a href="https://x.com/?lang=en">X</a> | 
+                    <a href="https://www.tiktok.com/en/">TikTok</a> |
+                    <a href="https://www.youtube.com/">YouTube</a> |
+                    <a href="https://open.spotify.com/">Spotify</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
